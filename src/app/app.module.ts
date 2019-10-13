@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { KpcBrowserModule, KpcModule } from 'kpc-angular';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,8 +9,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    KpcBrowserModule,
+    AppRoutingModule,
+    KpcModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
