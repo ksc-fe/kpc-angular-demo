@@ -1,5 +1,6 @@
-import { KpcBrowserModule, KpcModule } from 'kpc-angular';
-import { NgModule } from '@angular/core';
+// import { KpcBrowserModule, KpcModule } from 'kpc-angular/';
+import { KpcBrowserModule, KpcModule } from 'kpc-angular/@stylus'; // use `ksyun` theme
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { AppComponent } from './app.component';
     KpcModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
